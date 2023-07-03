@@ -154,7 +154,6 @@
         }
       });
       next =
-      // fixed bug: index => index -1 to go back to previous item in the array
         imagesCollection[index - 1] ||
         imagesCollection[imagesCollection.length - 1];
       $(".lightboxImage").attr("src", $(next).attr("src"));
